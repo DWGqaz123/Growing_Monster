@@ -1,0 +1,150 @@
+page{
+  height: 100%;
+}
+.container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+}
+.upper_1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.upper_2{
+  display: flex;
+  flex-direction: row;
+}
+.change{
+  background-color: rgb(85, 211, 173);
+  border-radius: 30px;
+}
+.weather{
+  background-color: rgb(85, 211, 173);
+  margin-left: 20rpx;
+  width: 354rpx;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 25px;
+}
+.showAllmonsters{
+  border-radius: 30px;
+  background-color: rgb(85, 211, 173);
+}
+.location{
+  background-color: rgb(85, 211, 173);
+  margin-left: 20rpx;
+  height: 75rpx;
+  width: 354rpx;
+  text-align: center;
+  border-radius: 30px;
+}
+.monster{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: red solid; */
+}
+
+/* .bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 10%;
+} */
+.status{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* border: red solid; */
+}
+
+.statusText{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  background-color:rgb(85, 211, 173);
+  border-radius: 10px;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.background_2 {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  background-size:100% 100%;
+  z-index: 0;
+}
+.foodType{
+  text-align: center;
+  background-color: rgb(241, 180, 47);
+  height: 60rpx;
+  width: 200rpx;
+  margin-left: -100rpx;
+  margin-right: 50rpx;
+  border-radius: 30px;
+}
+.water{
+  background-color: blue;
+  color: white;
+  width: 200rpx;
+  margin-left: -100rpx;
+  margin-right: 50rpx;
+  text-align: center;
+  border-radius: 30px;
+}
+.waterBox{
+  display: flex;
+  flex-direction: row;
+  margin-left: 100rpx;
+}
+.foodBox{
+  display: flex;
+  flex-direction: row;
+  margin-left: 100rpx;
+  margin-top: 20rpx;
+}
+.waterCup {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -200rpx;
+  margin-top: -20rpx;
+}
+.food_1{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -200rpx;
+  margin-top: -10rpx;
+}
+.love{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: 400rpx;
+}
+#d{
+  width: 180rpx;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+  text-align: center;
+}
+.photo{
+  height: 120rpx;
+  width: 320rpx;
+  margin-left: 20rpx;
+  background-color: cornflowerblue;
+  border-radius: 10% / 50%;
+}
+.photoBox{
+  display: flex;
+  flex-direction: column;
+}

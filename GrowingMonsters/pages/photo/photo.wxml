@@ -1,0 +1,7 @@
+<view class = "container">
+  <camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+  <view>
+    <button type="primary" bindtap="takePhoto">拍照</button>
+  </view>
+  <button type="default" bindtap = "directBack">返回</button>
+</view>

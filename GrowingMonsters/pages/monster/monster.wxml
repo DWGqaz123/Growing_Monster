@@ -1,0 +1,60 @@
+<view class="container">
+  <image class='background' src="{{weather_icon}}" mode="aspectFill"></image>
+  <image class='background_2' src="{{weather_icon_1}}" mode="aspectFill"></image>
+  <view class="upper_1">
+    <view>
+      <button class="showAllmonsters" bindtap="showAllmonsters">图鉴</button>
+    </view>
+    <view class="location">
+      <picker mode="region" bindchange = "pick" >
+        <input class = "location" type="text" disabled="true" value="{{areaLocation}}" />
+      </picker>
+    </view>
+  </view>
+  <view class="upper_2">
+  <view class="change">
+      <button class="change" bindtap="changeMonster">更换怪兽</button>
+  </view>
+  <view class="weather">
+    <text class="temp">{{temp_now}}°c</text>
+    <text class="text">{{weather_today}}</text>
+  </view>
+</view>
+  <view class = "monstor">
+    <view class="status">
+    <view id="d">
+      <text class="statusText" >饱食度</text>
+      <progress percent="{{satiation}}" stroke-width="15" color = "rgb(241, 180, 47)"active active-mode="forwards"></progress>
+    </view>
+    <view id="d">
+      <text class="statusText" >水</text>
+      <progress percent="{{water}}" stroke-width="15" color="blue" active active-mode="forwards"></progress>
+    </view>
+    <view id="d">
+      <text class="statusText" >亲密度</text>
+      <progress percent="{{intimacy}}" stroke-width="15" color="pink" active active-mode="forwards" bindactiveend="ifFull"></progress>
+    </view>
+    </view>
+    <image class = "love" id="love" src="cloud://growingmonsters-0gjrrtfq71290f63.6772-growingmonsters-0gjrrtfq71290f63-1322298263/other material/爱心 (1).svg" wx:if="{{isLoveVisible}}"></image>
+    <image src="{{monsterList[monsterShapeNUM]}}"></image>
+  </view>
+  <view class="bottom">
+    <view class="waterBox">
+      <text class="water">水</text>
+      <image class="waterCup" src="cloud://growingmonsters-0gjrrtfq71290f63.6772-growingmonsters-0gjrrtfq71290f63-1322298263/food/水 (1).svg" mode="aspectFill" animation="{{drinkAnimation}}" wx:if="{{isWaterCupVisible}}"></image>
+      <button class="feedingWater" size="mini" type="primary" bindtap="drink">喂水</button>
+    </view>
+    <view class="foodBox">
+      <image class = "food_1" src="{{chosenfood}}" mode="aspectFill" animation="{{feedAnimation}}" wx:if="{{isFoodVisible}}"></image>
+      <picker type="selector" bindchange="changeFood" range="{{foodList}}">
+      <input class = "foodType" type="text" disabled="true" value="{{pick_food}}" />
+    </picker>
+    <button class="feedingFood" size="mini" type="primary" bindtap="feed">喂食</button>
+    </view>
+  </view>
+  <view class="photoBox">
+  <image class="photo" src="{{photo}}" mode="aspectFit" animation="{{photoAnimation}}"></image>
+  <button class="takePhoto" type="primary" bindtap="takePhoto">拍照提升亲密度</button>
+  <button class="submitPhoto" bindtap = "submitPhoto">喂照片</button>
+  </view>
+</view>

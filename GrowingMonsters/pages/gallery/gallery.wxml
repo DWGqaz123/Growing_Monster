@@ -1,0 +1,9 @@
+<view class="top">
+  <button class = "back" bindtap="back" type="primary" size="mini" >返回</button>
+  <view class="title">怪兽图鉴</view>
+</view>
+<view class="monster-gallery">
+  <block wx:for="{{[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}}" wx:key="index">
+    <image class="monster-image" src="{{monsterList[index]}}" mode="aspectFit"></image>
+  </block>
+</view>
